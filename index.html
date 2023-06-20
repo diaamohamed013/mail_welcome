@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+            font-family: 'Cairo', 'DM Sans', sans-serif;
+            background: #f5f6fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .btn-Bg {
+            color: #fff;
+            background-color: #d44d00;
+        }
+
+        .welcomeMail {
+            margin: 30px auto;
+            width: 55%;
+            background: #D5E6EA;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .topContent {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+        .mailContent {
+            background: #fff;
+            width: 80%;
+            margin: auto;
+        }
+
+        .bottomContent .headMail {
+            background-image: url(images/celebration.webp);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 150px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottomContent .headMail h1 {
+            position: relative;
+            z-index: 1028;
+            color: #f8f8f8;
+        }
+
+        .bottomContent .headMail h1 span:first-child {
+            color: #0315af;
+        }
+
+        .bottomContent .headMail h1 span:last-child {
+            color: #d44d00;
+        }
+
+        .bottomContent .headMail .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .bottomContent .bodyMail {
+            padding: 40px;
+        }
+
+        .bottomContent .bodyMail .terms ol {
+            margin: 0 16px 20px 16px;
+        }
+
+        .bottomContent .bodyMail .terms ol li {
+            margin: 10px;
+        }
+
+        .bottomContent .bodyMail .terms ol li::marker {
+            color: #5b9194;
+            margin-right: 5px;
+        }
+
+        .bottomContent .bodyMail .terms ol li span {
+            color: #d44d00;
+        }
+
+        .bottomContent .bodyMail h3 {
+            color: #333;
+        }
+
+        .bottomContent .bodyMail h3 strong {
+            color: #716c8f;
+        }
+
+        @media (max-width:1024px) {
+
+            .welcomeMail {
+                width: 80%;
+            }
+        }
+
+        @media (max-width:767px) {
+
+            .welcomeMail,
+            .mailContent {
+                width: 100%;
+            }
+
+            .welcomeMail {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcomeMail py-5 px-3">
+        <div class="topContent mt-2">
+            <div class="option">
+                <a href="#" class="btn btn-Bg rounded-pill px-4 py-2">
+                    Log In
+                </a>
+            </div>
+            <div class="log">
+                <img src="images/sahelbooks_logo.png" alt="logo" width="105px" height="auto">
+            </div>
+        </div>
+        <div class="mailContent">
+            <div class="bottomContent mt-5 mb-4">
+                <div class="headMail">
+                    <div class="overlay"></div>
+                    <h1 class="h4 text-center">
+                        Welcome to <span>Sahel</span> <span>Books</span> !
+                    </h1>
+                </div>
+                <div class="bodyMail">
+                    <h3 class="h6">
+                        Hi <strong>Diaa</strong> ,
+                    </h3>
+                    <p>
+                        We are pleased to have you as a member of Sahel Books Family.
+                    </p>
+                    <div class="terms">
+                        <p>
+                            Your Account Manager will be in touch soon, but if you want to get ahead then here's how ...
+                        </p>
+                        <ol>
+                            <li>
+                                Log in to your <span>trial site</span> to tour our most popular feature
+                            </li>
+                            <li>
+                                Log in to <span>review Site</span> to tour our most popular feature
+                            </li>
+                            <li>
+                                Log in to your <span>book a consultion</span> to tour our most popular feature
+                            </li>
+                        </ol>
+                    </div>
+                    <p>
+                        Your account is now verified and you can purchase tokens for the
+                        ICO. Also you can
+                        submit your documents for the KYC from my Account page.
+                    </p>
+                    <p>
+                        Hope you'll enjoy the experience, we're here if you have any
+                        questions, drop us a line
+                        at
+                        <a style="color: #6576ff;" href="mailto:techmindhelps@gmail.com">diaadiaa@gmail.com</a> anytime.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight text-center">
+            <p style="font-size: 13px;">
+                Copyright © 2021 Sahel Books. All rights reserved.
+                <br>
+                Template Made By
+                <a style="color: #6576ff;" href="">Sahel Books</a>.
+            </p>
+        </div>
+    </div>
+</body>
+
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+</html>
