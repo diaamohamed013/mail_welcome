@@ -7,6 +7,7 @@
     <title>Welcome</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -17,7 +18,7 @@
         body {
             overflow-x: hidden;
             font-family: 'Cairo', 'DM Sans', sans-serif;
-            background: #f5f6fa;
+            /* background: #f5f6fa; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,9 +32,11 @@
 
         .welcomeMail {
             margin: 30px auto;
-            width: 55%;
-            background: #D5E6EA;
+            /* width: 50%; */
+            background: #fff;
             border-radius: 10px;
+            box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+            ;
         }
 
         a {
@@ -49,12 +52,12 @@
 
         .mailContent {
             background: #fff;
-            width: 80%;
+            /* width: 80%; */
             margin: auto;
         }
 
         .bottomContent .headMail {
-            background-image: url(images/celebration.webp);
+            background-image: url(images/logo.jpeg);
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -63,20 +66,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .bottomContent .headMail h1 {
-            position: relative;
-            z-index: 1028;
-            color: #f8f8f8;
-        }
-
-        .bottomContent .headMail h1 span:first-child {
-            color: #0315af;
-        }
-
-        .bottomContent .headMail h1 span:last-child {
-            color: #d44d00;
         }
 
         .bottomContent .headMail .overlay {
@@ -92,23 +81,6 @@
             padding: 40px;
         }
 
-        .bottomContent .bodyMail .terms ol {
-            margin: 0 16px 20px 16px;
-        }
-
-        .bottomContent .bodyMail .terms ol li {
-            margin: 10px;
-        }
-
-        .bottomContent .bodyMail .terms ol li::marker {
-            color: #5b9194;
-            margin-right: 5px;
-        }
-
-        .bottomContent .bodyMail .terms ol li span {
-            color: #d44d00;
-        }
-
         .bottomContent .bodyMail h3 {
             color: #333;
         }
@@ -117,7 +89,19 @@
             color: #716c8f;
         }
 
-        @media (max-width:1024px) {
+        .socialIcons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .socialIcons a {
+            font-size: 13px;
+            color: #333;
+        }
+
+        /* @media (max-width:1024px) {
 
             .welcomeMail {
                 width: 80%;
@@ -134,76 +118,76 @@
             .welcomeMail {
                 margin: 0 auto;
             }
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <div class="welcomeMail py-5 px-3">
-        <div class="topContent mt-2">
-            <div class="option">
-                <a href="#" class="btn btn-Bg rounded-pill px-4 py-2">
-                    Log In
-                </a>
-            </div>
-            <div class="log">
-                <img src="images/sahelbooks_logo.png" alt="logo" width="105px" height="auto">
-            </div>
-        </div>
-        <div class="mailContent">
-            <div class="bottomContent mt-5 mb-4">
-                <div class="headMail">
-                    <div class="overlay"></div>
-                    <h1 class="h4 text-center">
-                        Welcome to <span>Sahel</span> <span>Books</span> !
-                    </h1>
-                </div>
-                <div class="bodyMail">
-                    <h3 class="h6">
-                        Hi <strong>Diaa</strong> ,
-                    </h3>
-                    <p>
-                        We are pleased to have you as a member of Sahel Books Family.
-                    </p>
-                    <div class="terms">
-                        <p>
-                            Your Account Manager will be in touch soon, but if you want to get ahead then here's how ...
-                        </p>
-                        <ol>
-                            <li>
-                                Log in to your <span>trial site</span> to tour our most popular feature
-                            </li>
-                            <li>
-                                Log in to <span>review Site</span> to tour our most popular feature
-                            </li>
-                            <li>
-                                Log in to your <span>book a consultion</span> to tour our most popular feature
-                            </li>
-                        </ol>
+    <div class="row mx-0">
+        <div class="col-lg-6 col-md-10 mx-auto">
+            <div class="welcomeMail py-3 px-3">
+                <div class="topContent mt-2">
+                    <!-- <div class="option">
+                        <a href="#" class="btn btn-Bg rounded-pill px-4 py-2">
+                            Log In
+                        </a>
+                    </div> -->
+                    <div class="log">
+                        <img src="images/sahelbooks_logo.png" alt="logo" width="105px" height="auto">
                     </div>
+                </div>
+                <div class="mailContent">
+                    <div class="bottomContent mt-5 mb-4">
+                        <div class="headMail">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="bodyMail">
+                            <h3 class="h5 mb-4">
+                                Greetings and welcome!
+                            </h3>
+                            <div class="terms">
+                                <p>
+                                    We're thrilled that you've opted for SahelBooks – you're just one step away from
+                                    embarking on your journey with us. Take
+                                    a moment to verify your email through this link.
+                                </p>
+                                <p class="option text-center">
+                                    <a href="#" class="btn btn-Bg rounded-pill px-4 py-2">
+                                        Confirm
+                                    </a>
+                                </p>
+                            </div>
+                            <p>
+                                SahelBooks is crafted to align with your needs and surpass your expectations. Should you
+                                require any assistance.
+                                <br>
+                                feel free to reach out to us via email or <a href="https://api.whatsapp.com/send?phone=966115201525" target="_blank"
+                                    style="text-decoration: underline;">WhatsApp</a> using the provided link.
+                            </p>
+                            <p>
+                                SahelBooks – simplified for you, optimized for your accountant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyRight text-center">
                     <p>
-                        Your account is now verified and you can purchase tokens for the
-                        ICO. Also you can
-                        submit your documents for the KYC from my Account page.
+                        Follow Us On
                     </p>
-                    <p>
-                        Hope you'll enjoy the experience, we're here if you have any
-                        questions, drop us a line
-                        at
-                        <a style="color: #6576ff;" href="mailto:techmindhelps@gmail.com">diaadiaa@gmail.com</a> anytime.
-                    </p>
+                    <div class="socialIcons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-snapchat"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="copyRight text-center">
-            <p style="font-size: 13px;">
-                Copyright © 2021 Sahel Books. All rights reserved.
-                <br>
-                Template Made By
-                <a style="color: #6576ff;" href="">Sahel Books</a>.
-            </p>
         </div>
     </div>
+
 </body>
 
 
